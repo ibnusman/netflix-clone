@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/bgimage.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    
+
+}
+
+
+.hero {
+
+    height: 40vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px; 
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+.cta-button, .login-button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 100px;
+}
+
+.cta-button:hover, .login-button:hover {
+    background-color: #ff0a16;
+}
+
+.faq {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.form-section {
+    max-width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.navbar a img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.navbar img {
+    height: 40px; 
+    width: auto; 
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    padding: 15px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff0a16;
+}
+
+p a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta-button, .login-button {
+        font-size: 14px;
+    }
+
+    .faq h2 {
+        font-size: 1.5em;
+    }
+
+    .faq-item h3 {
+        font-size: 1em;
+    }
+
+    .form-section {
+        padding: 30px;
+        margin: 70px auto;
+        max-width: 90%;
+    }
+
+    input, button[type="submit"], .cta-button, .login-button {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
